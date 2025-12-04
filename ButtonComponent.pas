@@ -20,7 +20,7 @@ type
     FIsHover: Boolean;
     FIsPressed: Boolean;
     FImageLayout: TImageLayout;
-    FFont: TFont;  // ← ADICIONADO
+    FFont: TFont;
     FOnClick: TNotifyEvent;
     procedure SetCaption(const Value: string);
     procedure SetImagePNG(const Value: TPngImage);
@@ -29,7 +29,7 @@ type
     procedure SetCorHover(const Value: TColor);
     procedure SetCorBorda(const Value: TColor);
     procedure SetImageLayout(const Value: TImageLayout);
-    procedure SetFont(const Value: TFont);  // ← ADICIONADO
+    procedure SetFont(const Value: TFont);
     procedure CMMouseEnter(var Message: TMessage); message CM_MOUSEENTER;
     procedure CMMouseLeave(var Message: TMessage); message CM_MOUSELEAVE;
   protected
@@ -37,7 +37,7 @@ type
     procedure Click; override;
     procedure MouseDown(Button: TMouseButton; Shift: TShiftState; X, Y: Integer); override;
     procedure MouseUp(Button: TMouseButton; Shift: TShiftState; X, Y: Integer); override;
-    function GetImageSize: Integer;  // ← ADICIONADO
+    function GetImageSize: Integer;
   public
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
@@ -45,7 +45,7 @@ type
     property Caption: string read FCaption write SetCaption;
     property ImagePNG: TPngImage read FImagePNG write SetImagePNG;
     property ImageLayout: TImageLayout read FImageLayout write SetImageLayout default ilImageTop;
-    property Font: TFont read FFont write SetFont;  // ← ADICIONADO
+    property Font: TFont read FFont write SetFont;
     property CorFundo: TColor read FCorFundo write SetCorFundo default clBtnFace;
     property CorTexto: TColor read FCorTexto write SetCorTexto default clBlack;
     property CorHover: TColor read FCorHover write SetCorHover default clSkyBlue;
