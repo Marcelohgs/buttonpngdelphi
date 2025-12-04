@@ -1,0 +1,34 @@
+# Pastas de build geradas pela IDE
+Win32/
+Win64/
+
+# Arquivos de cache e configuração da IDE
+*.local
+*.identcache
+*.stat
+*.dproj.local
+*.tvsconfig
+
+# Arquivos compilados temporários
+*.dcu
+*.res
+*.rsm
+*.drc
+
+# Backups do Delphi
+*.~*
+*.bak
+*.old
+
+# Histórico da IDE
+__history/
+__recovery/
+
+# Logs
+*.log
+
+# Outros arquivos temporários comuns
+*.cfg
+*.map
+*.obj
+*.hpp
